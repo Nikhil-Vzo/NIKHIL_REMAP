@@ -444,15 +444,4 @@ gsap.from(".card3", {
   ease: "expo.out"
 });
 
-gsap.utils.toArray(".card1 img, .card2 img, .card3 img").forEach((img) => {
-  gsap.from(img, {
-    scrollTrigger: {
-      trigger: img,
-      start: "top 95%",
-      scrub: true
-    },
-    scale: 1.2,
-    opacity: 0.6,
-    ease: "power2.out"
-  });
-});
+
