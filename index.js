@@ -409,39 +409,5 @@ gsap.utils.toArray("section").forEach((section) => {
   });
 });
 
-gsap.from(".card1", {
-  scrollTrigger: {
-    trigger: ".card1",
-    start: "top 90%",
-  },
-  opacity: 0,
-  y: 80,
-  duration: 1.3,
-  ease: "expo.out"
-});
-
-gsap.from(".card2", {
-  scrollTrigger: {
-    trigger: ".card2",
-    start: "top 90%",
-  },
-  opacity: 0,
-  y: 80,
-  duration: 1.3,
-  delay: 0.2,
-  ease: "expo.out"
-});
-
-gsap.from(".card3", {
-  scrollTrigger: {
-    trigger: ".card3",
-    start: "top 90%",
-  },
-  opacity: 0,
-  y: 80,
-  duration: 1.3,
-  delay: 0.4,
-  ease: "expo.out"
-});
 
 
