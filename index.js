@@ -377,8 +377,6 @@ initZFitEngine();
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.registerPlugin(ScrollTrigger);
-
 // Animate every section on scroll (excluding the shop button)
 document.querySelectorAll("section").forEach((section) => {
   gsap.from(section, {
@@ -407,3 +405,4 @@ document.querySelectorAll("section").forEach((section) => {
     ease: "expo.out",
   });
 });
+
