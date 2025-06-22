@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZUDIO - NiKhIl MakeS</title>
+  <link rel="icon" href="./zudio logo.jpeg" />
+  <link rel="stylesheet" href="./index.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.26/bundled/lenis.min.js"></script>
+</head>
+<body>
+
+  <!-- ================== Header Section ================== -->
+  <section class="header">
+
+    <!-- 🎬 Background Video -->
+    <video autoplay muted loop playsinline class="bg-video" poster="https://i.ibb.co/Y4B2tMDX/fallback-img-compressed.png">
+      <source src="./compressed.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video> 
+
+    <!-- 🧭 Navigation Bar -->
+    <nav>
+      <!-- Logo -->
+      <a href="index.html">
+        <img src="https://i.ibb.co/mr8s72Z5/zudio-logo-compressed.jpg" alt="zudio-logo-compressed" alt="zudio-logo" >
+      </a>
+
+      <!-- Navigation Links -->
+      <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-x" id="closeMenu" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Best Sellers</a></li>
+          <li><a href="#">Season Trends</a></li>
+          <li><a href="#">Zudio Apparels</a></li>
+        </ul>
+      </div>
+
+      <!-- Buttons -->
+      <div class="btn">
+        <button class="btn-nav">Sign Up</button>
+        <button class="btn-nav">Sign In</button>
+      </div>
+
+      <!-- Hamburger Icon -->
+      <i class="fa-solid fa-bars" id="openMenu" onclick="showMenu()"></i>
+    </nav>
+
+    <!-- Overlay Content -->
+    <div class="overlay"></div>
+    <div class="content">
+      <h1 id="rainbow-text">Fresh Bold You</h1>
+      <p class="tagline">New Arrivals That Turn Heads</p>
+      <p class="subtext">Unwrap the latest trends curated just for you at Zudio.</p>
+      <button class="cta-btn">Explore Collection</button>
+    </div>
+
+  </section>
+
+  <!-- ================== Horizontal Section ================== -->
+   <div class="horizontal-scroll-wrapper">
+  <div class="horizontal-section">
+
+    <!-- Card 1 -->
+    <div class="card1">
+      <div class="card-content">
+        <h2>Exclusive</h2>
+        <h1> Discover Our Exclusive <br> Seasonal Collections<br> Today</h1>
+        <p>Step into style with our exclusive seasonal collections, designed to elevate 
+          <br>your wardrobe. Experience the latest trends that blend comfort and 
+          <br>elegance, perfect for any occasion.</p>
+        <div class="btn-container">
+          <button class="card-btn"><span>Shop Now</span></button>
+          <button class="card-btn"><span>Explore More</span></button>
+        </div>
+      </div>
+      <img src="https://i.ibb.co/nNFqxB8X/black-dress-compressed.jpg" alt="Card Image 1" />
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card2">
+      <div class="card-content">
+        <h2>Quality</h2>
+        <h1> Experience Unmatched <br> Quality in Every Stitch </h1>
+        <p>At ZUDIO, we prioritize high-quality fabrics and innovative designs that 
+          <br>elevate your wardrobe. Discover the perfect blend of comfort and style with 
+          <br>our latest collections.</p>
+        <div class="btn-container">
+          <button class="card-btn"><span>Shop Now</span></button>
+          <button class="card-btn"><span>Explore More</span></button>
+        </div>
+      </div>
+      <img src="https://i.ibb.co/G4NDCWhm/model-man-posing-with-coat-compressed.jpg"  alt="Card Image 2" />
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card3">
+      <div class="card-content">
+        <h2>Style</h2>
+        <h1> Elevate Your Style with <br> Our Latest Trends </h1>
+        <p>Discover the latest trends that redefine fashion. From chic casuals to 
+          <br>elegant formals, our new arrivals are designed to make you stand out.</p>
+        <p class="addd-on" id="fix" ><i class="fa-solid fa-snowflake"></i> Fashion that fits your budget and style.</p>
+        <p class="addd-on" id="fix"  ><i class="fa-solid fa-person-walking-luggage"></i> Shop the latest trends at unbeatable prices.</p>
+        <p class="addd-on" id="fix"  ><i class="fa-solid fa-shirt"></i> Elevate your wardrobe without overspending.</p>
+        <div class="btn-container">
+          <button class="card-btn"><span>Shop Now</span></button>
+          <button class="card-btn"><span>Explore More</span></button>
+        </div>
+      </div>
+     <img src="https://i.ibb.co/4Z7qdY0n/happy-attractive-woman-standing-gray-looking-camera-compressed.jpg" alt="Card Image 3" />
+    </div>
+
+  </div>
+
+
+  </div>
+
+
+<!-- =======================section========================= -->
+
+
+ <section class="zfit-engine-section">
+    <div class="zfit-engine">
+      <h1 class="zfit-title">ZUDIO FIT ENGINE</h1>
+      <p class="zfit-intro">Discover your perfect look with our interactive style selector. Mix and match tops and bottoms to create bold statements or subtle vibes. Fashion is now programmable.</p>
+
+      <div class="zfit-controls">
+        <div class="zfit-group">
+          <label for="topSelect">Top</label>
+          <select id="topSelect" class="zfit-select">
+            <option value="https://i.ibb.co/gLPkMBDX/top3-compressed.jpg">Top 1</option>
+            <option value="https://i.ibb.co/1GJYnkKf/top2-compressed.jpg">Top 2</option>
+            <option value="https://i.ibb.co/G3v4VXpQ/top1-compressed.jpg">Top 3</option>
+          </select>
+        </div>
+        <div class="zfit-group">
+          <label for="bottomSelect">Bottom</label>
+          <select id="bottomSelect" class="zfit-select">
+            <option value="https://i.ibb.co/mCkMzjzY/bottom2-compressed.jpg">Bottom 1</option>
+            <option value="https://i.ibb.co/qY7fmVWD/bottom3-compressed.jpg">Bottom 2</option>
+            <option value="https://i.ibb.co/KxfxQTz5/bottom1-compressed.jpg">Bottom 3</option>
+          </select>
+        </div>
+        <div class="zfit-group">
+          <label for="shoeSelect">Shoes</label>
+          <select id="shoeSelect" class="zfit-select">
+            <option value="https://i.ibb.co/mVz211Rf/shoe1-compressed.jpg">Shoe 1</option>
+            <option value="https://i.ibb.co/x83xqk5g/shoe2-compressed.jpg">Shoe 2</option>
+            <option value="https://i.ibb.co/m557Mj37/shoe3-compressed.jpg">Shoe 3</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="zfit-style-tag" id="styleTag">Choose your vibe</div>
+
+      <div class="zfit-preview">
+        <div class="zfit-container">
+          <img id="topImg" class="zfit-layer" src="https://i.ibb.co/gLPkMBDX/top3-compressed.jpg" alt="Top" />
+          <img id="bottomImg" class="zfit-layer" src="https://i.ibb.co/mCkMzjzY/bottom2-compressed.jpg" alt="Bottom" />
+          <img id="shoeImg" class="zfit-layer" src="https://i.ibb.co/mVz211Rf/shoe1-compressed.jpg" alt="Shoe" />
+        </div>
+        <div class="zfit-glow-border"></div>
+      </div>
+
+      <button class="zfit-shop-btn" id="shopBtn">SHOP THIS LOOK</button>
+    </div>
+  </section>
+
+
+   
+
+
+
+
+
+
+
+<!-- ===========================================STORE LOCATOR=====================================================-->
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ================== FAQ Section ================== -->
+  <section class="faq-section">
+    <h2 class="faq-title">FAQs</h2>
+    <p class="faq-subtitle">Explore our frequently asked questions about the latest arrivals and shopping experience.</p>
+
+    <div class="faq-item">
+      <button class="faq-question">What are the trends?</button>
+      <div class="faq-answer">
+        <p>Our latest trends feature vibrant colors and stylish designs that reflect the season's essence...</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How to shop online?</button>
+      <div class="faq-answer">
+        <p>Shopping online is easy! Simply browse, add to cart, and checkout.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">What is the return policy?</button>
+      <div class="faq-answer">
+        <p>30-day hassle-free return on unused items in original packaging.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How to track orders?</button>
+      <div class="faq-answer">
+        <p>You'll receive a tracking number via email once your order ships.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Are there size guides?</button>
+      <div class="faq-answer">
+        <p>Yes, detailed size guides are available with each product.</p>
+      </div>
+    </div>
+
+    <div class="faq-cta">
+      <p class="faq-cta-text">Still have questions? We’re here to help you!</p>
+      <a href="contact.html" class="faq-contact-btn">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- ================== Testimonial Section ================== -->
+  <section class="testimonial-section">
+    <h2 class="testimonial-title">What Our Customers Say</h2>
+    <div class="testimonial-wrapper">
+      <div class="testimonial-slider" id="testimonialSlider">
+        <div class="testimonial-card">
+          <p>“Absolutely love the collection! The quality and fit are unmatched.”</p>
+          <h4>- Aarav S.</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>“Shopping here is a joy. It’s my go-to place for style.”</p>
+          <h4>- Meera K.</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>“Affordable, trendy, and comfortable. What else could you want?”</p>
+          <h4>- Rohan D.</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>“My wardrobe has never looked better. Zudio gets me.”</p>
+          <h4>- Simran V.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================== Footer Section ================== -->
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <!-- Logo + Tagline -->
+      <div class="footer-column">
+        <h3 class="footer-logo">ZUDIO</h3>
+        <p class="footer-tagline">Style. Quality. Affordability.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Collections</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Returns</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-column">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Size Guide</a></li>
+          <li><a href="#">Order Tracking</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="footer-column">
+        <h4>Newsletter</h4>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+        <div class="footer-socials">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>DESIGNED WITH <i class="fa-solid fa-heart"></i> LOVE BY NiKhIl.</p>
+      <a href="https://portfolio-nikhil-reimagine.netlify.app/" class="portfolio-btn" target="_blank" rel="noopener">
+        DEV'S PORTFOLIO <i class="fa-solid fa-hand-point-left"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- ================== Scripts ================== -->
+<script src="./index.js" defer></script>
+
+
+</body>
+</html>
