@@ -377,12 +377,14 @@ initZFitEngine();
 
 gsap.registerPlugin(ScrollTrigger);
 
-// Animate every section on scroll
+gsap.registerPlugin(ScrollTrigger);
+
+// Animate every section on scroll (excluding the shop button)
 document.querySelectorAll("section").forEach((section) => {
   gsap.from(section, {
     scrollTrigger: {
       trigger: section,
-      start: "top 95%", // animate in when section enters
+      start: "top 95%",
       toggleActions: "play none none none"
     },
     opacity: 0,
@@ -390,12 +392,9 @@ document.querySelectorAll("section").forEach((section) => {
     duration: 1,
     ease: "power3.out"
   });
-});
-
-
-// Animate h1, h2, p elements inside each section
-gsap.utils.toArray("section").forEach((section) => {
-  gsap.from(section.querySelectorAll("h1, h2, p, button"), {
+  
+  // Animate elements except the shop button
+  gsap.from(section.querySelectorAll("h1, h2, p, button:not(.zfit-shop-btn)"), {
     scrollTrigger: {
       trigger: section,
       start: "top 80%",
@@ -408,4 +407,3 @@ gsap.utils.toArray("section").forEach((section) => {
     ease: "expo.out",
   });
 });
-
